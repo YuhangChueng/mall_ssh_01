@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="mall"  namespace="/admin" extends="struts-default">
+		<action name="adminUserAction" class="adminUserAction">
+			<result name="success">/admin/adminUserList.jsp</result>
+			<result name="input">/admin/main.jsp</result>
+		</action>
+	</package>
+</struts>    
