@@ -19,23 +19,4 @@ public class AdminUserServiceImpl implements AdminUserService{
 		List<AdminUser> ls= adminUserDao.findAdminUserList();
 		return ls;
 	}
-
-	@Override
-	public void saveAdminUser() {
-		
-		
-	}
-
-	@Override
-	public void updateAdminUser() {
-		
-		
-	}
-
-	@Override
-	public void deleteAdminUser() {
-		
-		
-	}
-
 }

@@ -7,7 +7,7 @@ public class Orders {
 	private int orders_num;
 	private String orders_sum;
 	private String orders_time;
-	private String status;
+	private String orders_status;
 	private User user;
 	private Address address;
 	private List<OrdersItem> ordersitem;
@@ -35,6 +35,12 @@ public class Orders {
 	public void setOrders_time(String orders_time) {
 		this.orders_time = orders_time;
 	}
+	public String getOrders_status() {
+		return orders_status;
+	}
+	public void setOrders_status(String orders_status) {
+		this.orders_status = orders_status;
+	}
 	public User getUser() {
 		return user;
 	}
@@ -52,12 +58,6 @@ public class Orders {
 	}
 	public void setOrdersitem(List<OrdersItem> ordersitem) {
 		this.ordersitem = ordersitem;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
 	}
 	
 }

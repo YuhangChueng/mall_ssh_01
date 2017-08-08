@@ -27,22 +27,4 @@ public class AdminUserDaoImpl implements AdminUserDao{
 		return query.list();
 	}
 
-	@Override
-	public void saveAdminUser() {
-
-		
-	}
-
-	@Override
-	public void updateAdminUser() {
-
-		
-	}
-
-	@Override
-	public void deleteAdminUser() {
-		
-		
-	}
-
 }

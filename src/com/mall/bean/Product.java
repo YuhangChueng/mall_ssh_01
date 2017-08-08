@@ -11,7 +11,7 @@ public class Product {
 	private List<OrdersItem> ordersitem;
 	private List<Comment> comment;
 	private Adervise adervise;
-	private ProductType producttype;
+	private ProductType productType;
 	public int getProduct_id() {
 		return product_id;
 	}
@@ -61,10 +61,10 @@ public class Product {
 		this.adervise = adervise;
 	}
 	public ProductType getProducttype() {
-		return producttype;
+		return productType;
 	}
 	public void setProducttype(ProductType producttype) {
-		this.producttype = producttype;
+		this.productType = producttype;
 	}
 	
 }
