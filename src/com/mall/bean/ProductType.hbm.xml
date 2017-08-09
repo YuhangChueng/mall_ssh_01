@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.mall.bean">
+   <class name="ProductType" table="ProductType" catalog="mall">
+      <id name="productType_id" column="productType_id">
+         <generator class="native"/>
+      </id>
+      <property name="productType_name" column="productType_name"/>
+      <set name="product" inverse="true">
+      	<key column="productType_product"></key>
+      	<one-to-many class="Product"/>
+      </set>
+   </class>
+</hibernate-mapping>

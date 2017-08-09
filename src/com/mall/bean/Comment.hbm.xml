@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.mall.bean">
+   <class name="Comment" table="Comment" catalog="mall">
+      <id name="comm_id" column="comm_id">
+         <generator class="native"/>
+      </id>
+      <property name="comm_num" column="comm_num"/>
+      <property name="comm_detail" column="comm_detail"/>
+      <many-to-one name="user" column="user_comments"></many-to-one>
+      <many-to-one name="product" column="product_comments"></many-to-one>
+   </class>
+</hibernate-mapping>

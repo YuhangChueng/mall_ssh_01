@@ -1,10 +1,17 @@
 package com.mall.bean;
 
 public class Address {
+	private String address_id;
 	private String rec_name;
 	private String rec_tel;
 	private String rec_address;
 	private User user;
+	public String getAddress_id() {
+		return address_id;
+	}
+	public void setAddress_id(String address_id) {
+		this.address_id = address_id;
+	}
 	public String getRec_name() {
 		return rec_name;
 	}

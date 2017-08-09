@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Orders {
 	private int orders_id;
-	private int orders_num;
 	private String orders_sum;
 	private String orders_time;
 	private String orders_status;
@@ -16,12 +15,6 @@ public class Orders {
 	}
 	public void setOrders_id(int orders_id) {
 		this.orders_id = orders_id;
-	}
-	public int getOrders_num() {
-		return orders_num;
-	}
-	public void setOrders_num(int orders_num) {
-		this.orders_num = orders_num;
 	}
 	public String getOrders_sum() {
 		return orders_sum;

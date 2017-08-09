@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.mall.bean">
+   <class name="Product" table="Product" catalog="mall">
+      <id name="product_id" column="product_id">
+         <generator class="native"/>
+      </id>
+      <property name="product_price" column="product_price"/>
+      <property name="product_name" column="product_name"/>
+      <property name="product_detail" column="product_detail"/>
+      <property name="product_pic" column="product_pic"/>
+      <set name="ordersitem" inverse="true">
+      	<key column="product_ordersitem"></key>
+      	<one-to-many class="OrderItem"/>
+      </set>
+      <set name="comment" inverse="true">
+      	<key column="product_comments"></key>
+      	<one-to-many class="Comment"/>
+      </set>
+      <one-to-one name="adervise" constrained="true"></one-to-one>
+      <many-to-one name="productType" column="productType_product"></many-to-one>
+   </class>
+</hibernate-mapping>
